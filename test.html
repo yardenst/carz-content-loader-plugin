@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="contentloader.js"></script>
+    <script>
+        var options = {
+            'style_sheet_url': 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+            'content_url': 'http://localhost:8000/gen/186/reviews/clean/',
+            'generation_id': '186'
+        };
+        var obj = $("#reviews");
+        obj.carzcontent(options);
+        obj.on('load', function () {
+            alert('you can now read carz.co.il reviews');
+        });
+
+    </script>
+
+</head>
+<body>
+
+
+<div id="reviews"></div>
+
+</body>
+</html>
